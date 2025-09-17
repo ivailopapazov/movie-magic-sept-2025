@@ -40,7 +40,7 @@ SoftUni JS Back-End Course Workshop
 ### Search
  - [x] Show static search page
  - [x] Render all movies
- - [ ] Modify search form
+ - [x] Modify search form
  - [ ] Filter movies 
  - [ ] Remember search words
 
