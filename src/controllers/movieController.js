@@ -3,7 +3,7 @@ import { Router } from "express";
 const movieController = Router();
 
 movieController.get('/movies/create', (req, res) => {
-    res.send('Movie Create');     
+    res.render('create');
 });
 
 export default movieController;

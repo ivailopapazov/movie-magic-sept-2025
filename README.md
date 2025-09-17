@@ -20,8 +20,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Render movies on home page
  - [x] Show no movies screen
 ### Create Movie
- - [ ] Add Movie Controller
- - [ ] Show create movie page
+ - [x] Add Movie Controller
+ - [x] Show create movie page
  - [ ] Add routes
  - [ ] Ready body data
  - [ ] Create movie
