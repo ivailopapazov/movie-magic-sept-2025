@@ -7,25 +7,28 @@ movieController.get('/create', (req, res) => {
     res.render('create');
 });
 
-movieController.post('/create', (req, res) => {
+movieController.post('/create', async (req, res) => {
     const movieData = req.body;
 
-    movieService.create(movieData);
+    await movieService.create(movieData);
 
     res.redirect('/');
 });
 
-movieController.get('/:movieId/details', (req, res) => {
+movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
-    const movie = movieService.getOne(movieId);
+    const movie = await movieService.getOne(movieId);
 
-    res.render('details', { movie });
+    // TODO Prepare view data (temp solution)
+    const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
+
+    res.render('details', { movie, rating: ratingViewData });
 });
 
-movieController.get('/search', (req, res) => {
+movieController.get('/search', async (req, res) => {
     const filter = req.query;
 
-    const movies = movieService.getAll(filter);
+    const movies = await movieService.getAll(filter);
 
     res.render('search', { movies, filter, pageTitle: 'Search Movies' });
 });
