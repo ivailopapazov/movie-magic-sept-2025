@@ -13,13 +13,28 @@ SoftUni JS Back-End Course Workshop
  - [x] Render Home Page
  - [x] Add Layout
  - [x] Render About Page
-### Architecture
+### Architecture and dynamic rendering
  - [x] Add home controller
  - [x] Add movie data layer
  - [x] Add movie service
  - [x] Render movies on home page
- - [ ] Show no movies screen
----
+ - [x] Show no movies screen
+### Create Movie
+ - [ ] Add Movie Controller
+ - [ ] Show create movie page
  - [ ] Add routes
+ - [ ] Ready body data
+ - [ ] Create movie
+   - [ ] Add action
+   - [ ] Add service
+   - [ ] Add model method for creating movie
+
+
+ - [ ] Add 404 page
+
+
+
+
+
 
 
