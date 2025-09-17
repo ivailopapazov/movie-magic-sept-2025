@@ -24,11 +24,11 @@ SoftUni JS Back-End Course Workshop
  - [x] Show create movie page
  - [x] Add routes
  - [x] Ready body data
- - [ ] Create movie
+ - [x] Create movie
    - [x] Add action
-   - [ ] Add service
-   - [ ] Add model method for creating movie
-
+   - [x] Add service
+   - [x] Add model method for creating movie
+ - [ ] Redirect after creation
 
  - [ ] Add 404 page
 
