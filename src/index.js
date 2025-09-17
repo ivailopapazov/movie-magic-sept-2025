@@ -1,4 +1,4 @@
-import express, { application } from 'express'
+import express from 'express'
 import handlebars from 'express-handlebars'
 import routes from './routes.js';
 const app = express();
@@ -11,8 +11,11 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs');
 app.set('views', 'src/views');
 
-// Setup middlewares
+// Setup static middleware
 app.use(express.static('src/public'));
+
+// Parse form data from req
+app.use(express.urlencoded()); 
 
 // Routes
 app.use(routes);
