@@ -66,7 +66,7 @@ SoftUni JS Back-End Course Workshop
  - [x] Add movie model
    - [x] Create movie schema
    - [x] Create movie model
- - [x] Import file movies to database
+ - [x] Import file movies to database !DON'T IMPORT IDs
  - [x] Fix own property handlebars problem with lean method
  - [x] General fix for own property problem
  - [x] Refactor details
@@ -92,7 +92,7 @@ SoftUni JS Back-End Course Workshop
 ### Show Cast Details (population)
  - [x] Get movie casts filtered
  - [x] Show casts on details
- - [ ] Get movie casts using population
+ - [x] Get movie casts using population
 
 ### Bonuses
  - [x] Filter casts if they are already attached
