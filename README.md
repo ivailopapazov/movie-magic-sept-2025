@@ -60,10 +60,12 @@ SoftUni JS Back-End Course Workshop
 
 ### Setup Database
  - [x] Install mongoose `npm i mongoose`
- - [ ] Connect to DB 
+ - [x] Connect to DB 
 
 ### Refactor Movies to use mongoose
  - [ ] Add movie model
+   - [ ] Create movie schema
+   - [ ] Create movie model
 
 
 
