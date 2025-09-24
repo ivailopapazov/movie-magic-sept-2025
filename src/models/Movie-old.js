@@ -35,6 +35,16 @@ export default class Movie {
         return result
     }
 
+    static async create(data) {
+        db.movies.push(data);
+
+        const dbSerialized = JSON.stringify(db, null, 2);
+
+        await fs.writeFile('./src/db.json', dbSerialized);
+
+        return this;
+    }
+
     static findOne(filter = {}) {
         let result = db.movies[0];
 
