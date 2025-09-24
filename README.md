@@ -95,7 +95,7 @@ SoftUni JS Back-End Course Workshop
  - [ ] Get movie casts using population
 
 ### Bonuses
- - [ ] Filter casts if they are already attached
+ - [x] Filter casts if they are already attached
  - [ ] Env variables
  - [ ] name in movie
  - [ ] Back refference from vscode
