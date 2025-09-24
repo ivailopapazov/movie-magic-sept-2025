@@ -90,6 +90,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Attach cast functionallity
 
 ### Show Cast Details (population)
+ - [x] Get movie casts filtered
+
 
 ### Bonuses
  - [ ] Filter casts if they are already attached
