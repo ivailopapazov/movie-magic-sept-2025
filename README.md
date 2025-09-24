@@ -70,3 +70,5 @@ SoftUni JS Back-End Course Workshop
  - [ ] Add new resources
 
 
+### Bonuses
+ - [ ] Env variables
