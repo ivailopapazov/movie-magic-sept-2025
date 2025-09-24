@@ -1,3 +1,4 @@
+import { Types } from "mongoose";
 import Movie from "../models/Movie.js";
 
 export default {
@@ -5,7 +6,7 @@ export default {
         const result = await Movie.find(filter);
         // const result = await Movie.find(filter).lean();
         // const resultObj = result.map(movie => movie.toObject());
-        
+
         return result;
     },
     getOne(movieId) {
