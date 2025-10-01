@@ -12,7 +12,7 @@ authController.post('/register', async (req, res) => {
 
     await userService.register(userData);
 
-    res.redirect('/login');
+    res.redirect('/auth/login');
 });
 
 authController.get('/login', (req, res) => {
@@ -26,6 +26,15 @@ authController.post('/login', async (req, res) => {
 
     // Attach token to cookie
     res.cookie('auth', token);
+
+    res.redirect('/');
+});
+
+authController.get('/logout', (req, res) => {
+    // Clear auth cookie
+    res.clearCookie('auth');
+    
+    // BONUS: Invalidate JWT token
 
     res.redirect('/');
 });
