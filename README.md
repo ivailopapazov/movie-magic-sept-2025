@@ -137,6 +137,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Add auth info to handlebars context
 
 ### Show creator control buttons
+ - [x] Add edit and delete buttons on details page
+ - [ ] Show buttons only for creators
 
 ### Delete movies
 
