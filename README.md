@@ -104,8 +104,16 @@ SoftUni JS Back-End Course Workshop
 ## Workshop 3 - Session and Authentication
 
 ### Initial Setup
- - [ ] Add resources
+ - [x] Add resources
 
 ### Registration
- - [ ]  
+ - [ ] Add new controller `authController`
+ - [ ] Add registration page
+ - [ ] Add User model
+ - [ ] Add User service
+ - [ ] Handle registration (create user in database)
+ - [ ] Add password hashing
+
+### Login
+
 
