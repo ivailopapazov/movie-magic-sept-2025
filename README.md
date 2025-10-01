@@ -133,6 +133,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Add isGuest route guard
 
 ### Dynamic Navigation
+ - [x] Group navigation by user type (all, authenticated and guest)
+ - [x] Add auth info to handlebars context
 
 ### Delete movies
 
