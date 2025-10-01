@@ -99,7 +99,7 @@ SoftUni JS Back-End Course Workshop
  - [ ] Env variables
  - [ ] name in movie
  - [ ] Back refference from vscode
- - [ ] Add movie views to a folder
+ - [x] Add movie views to a folder
 
 ## Workshop 3 - Session and Authentication
 
@@ -151,8 +151,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Add dynamic movie data to edit page
  - [x] Handle edit movie
 
-### Bonus
+### Bonuses
  - [ ] Automatic login on register
+ - [ ] Edit categories
  - [ ] Invalidate token on logout
  - [ ] Refresh token
- - [ ] Edit categories
