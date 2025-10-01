@@ -154,3 +154,4 @@ SoftUni JS Back-End Course Workshop
  - [ ] Automatic login on register
  - [ ] Invalidate token on logout
  - [ ] Refresh token
+ - [ ] Edit categories
