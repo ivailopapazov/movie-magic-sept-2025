@@ -152,7 +152,7 @@ SoftUni JS Back-End Course Workshop
  - [x] Handle edit movie
 
 ### Bonuses
- - [ ] Automatic login on register
- - [ ] Edit categories
+ - [x] Automatic login on register
+ - [x] Edit categories
  - [ ] Invalidate token on logout
  - [ ] Refresh token
