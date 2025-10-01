@@ -100,3 +100,12 @@ SoftUni JS Back-End Course Workshop
  - [ ] name in movie
  - [ ] Back refference from vscode
  - [ ] Add movie views to a folder
+
+## Workshop 3 - Session and Authentication
+
+### Initial Setup
+ - [ ] Add resources
+
+### Registration
+ - [ ]  
+
