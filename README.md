@@ -156,3 +156,4 @@ SoftUni JS Back-End Course Workshop
  - [x] Edit categories
  - [ ] Invalidate token on logout
  - [ ] Refresh token
+ - [ ] Async jwt

@@ -9,6 +9,7 @@ export default function authMiddleware(req, res, next) {
     }
 
     try {
+        // TODO: Make it async
         const decodedToken = jwt.verify(token, JWT_SECRET);
         
         // Attach authenticated user to request
