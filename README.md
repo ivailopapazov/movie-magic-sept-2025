@@ -136,6 +136,8 @@ SoftUni JS Back-End Course Workshop
  - [x] Group navigation by user type (all, authenticated and guest)
  - [x] Add auth info to handlebars context
 
+### Show creator control buttons
+
 ### Delete movies
 
 ### Edit movies
