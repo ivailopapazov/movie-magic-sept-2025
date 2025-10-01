@@ -4,11 +4,11 @@ import userService from "../services/userService.js";
 const authController = Router();
 
 authController.get('/register', (req, res) => {
-    res.render('auth/register'); 
+    res.render('auth/register');
 });
 
 authController.post('/register', async (req, res) => {
-    const userData = req.body; 
+    const userData = req.body;
 
     await userService.register(userData);
 
@@ -16,7 +16,15 @@ authController.post('/register', async (req, res) => {
 });
 
 authController.get('/login', (req, res) => {
-    res.render('auth/login'); 
+    res.render('auth/login');
+});
+
+authController.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+
+    await userService.login(email, password);
+
+    res.end();
 });
 
 export default authController;
