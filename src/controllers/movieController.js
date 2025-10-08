@@ -11,7 +11,7 @@ movieController.get('/create', isAuth, (req, res) => {
         console.log(req.user.email);
     }
 
-    res.render('movies/create');
+    res.render('movies/create', { categories: getMovieCategoryViewData()});
 });
 
 movieController.post('/create', isAuth, async (req, res) => {
