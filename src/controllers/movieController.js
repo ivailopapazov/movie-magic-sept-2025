@@ -3,7 +3,6 @@ import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
 import { getErrorMessage } from "../utils/errorUtils.js";
-import { Types } from "mongoose";
 import { isMovieCreator } from "../middlewares/movieMiddleware.js";
 
 const movieController = Router();
@@ -51,9 +50,11 @@ movieController.get('/:movieId/details', async (req, res) => {
         // res.redirect('/404');
 
         // #2 Render 404 page with message (url not changed)
-        res.render('404', { error: 'Movie not found!' })
+        // res.render('404', { error: 'Movie not found!' })
 
         // #3 Redirect with message, url changed
+        req.tempData = { error: 'Movie not found!' };
+        res.redirect('/404');
     }
 });
 

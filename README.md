@@ -183,8 +183,9 @@ SoftUni JS Back-End Course Workshop
 - [x] Fix movie category on edit
 
 ### Bonuses
-- [ ] Dynamic page title advanced solution
+- [x] Dynamic page title using handlebars helper
 - [x] Guard edit from non creator
+- [ ] Explain http only
 - [ ] Redirect with message
 - [ ] Dynamic year check
 - [ ] Character name
