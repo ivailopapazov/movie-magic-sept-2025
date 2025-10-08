@@ -50,7 +50,7 @@ movieController.get('/:movieId/details', async (req, res) => {
         // res.redirect('/404');
 
         // #2 Render 404 page with message (url not changed)
-        res.render('404', { error: 'Movie not found!'})
+        res.render('404', { error: 'Movie not found!' })
 
         // #3 Redirect with message, url changed
     }
@@ -99,20 +99,33 @@ movieController.get('/:movieId/delete', isAuth, async (req, res) => {
 movieController.get('/:movieId/edit', async (req, res) => {
     const movieId = req.params.movieId;
 
-    const movie = await movieService.getOne(movieId);
+    try {
+        const movie = await movieService.getOne(movieId);
 
-    const categoriesViewData = getMovieCategoryViewData(movie.category);
+        const categoriesViewData = getMovieCategoryViewData(movie.category);
 
-    res.render('movies/edit', { movie, categories: categoriesViewData });
+        res.render('movies/edit', { movie, categories: categoriesViewData });
+    } catch (err) {
+        res.render('404', {error: 'Movie not found'})
+    }
 });
 
 movieController.post('/:movieId/edit', async (req, res) => {
     const movieId = req.params.movieId;
     const movieData = req.body;
 
-    await movieService.edit(movieId, movieData);
+    try {
+        await movieService.edit(movieId, movieData);
 
-    res.redirect(`/movies/${movieId}/details`);
+        res.redirect(`/movies/${movieId}/details`);
+    } catch (err) {
+        res.status(400).render('movies/edit', {
+            error: getErrorMessage(err),
+            movie: movieData,
+            categories: getMovieCategoryViewData(movieData.category)
+        });
+    }
+
 });
 
 function getMovieCategoryViewData(selectedCategory) {
