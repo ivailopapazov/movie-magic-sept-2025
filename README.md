@@ -181,6 +181,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add details page error handling
 
 ### Bonuses
+- [ ] Redirect with message
 - [ ] Guard edit from non creator
 - [ ] Dynamic year check
 - [ ] Character name

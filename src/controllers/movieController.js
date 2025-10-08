@@ -46,7 +46,13 @@ movieController.get('/:movieId/details', async (req, res) => {
 
         res.render('movies/details', { movie, rating: ratingViewData, isCreator });
     } catch (err) {
-        res.redirect('/404');
+        // #1 Redirect without message (not recomended)
+        // res.redirect('/404');
+
+        // #2 Render 404 page with message (url not changed)
+        res.render('404', { error: 'Movie not found!'})
+
+        // #3 Redirect with message, url changed
     }
 });
 
