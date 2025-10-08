@@ -23,9 +23,11 @@ movieController.post('/create', isAuth, async (req, res) => {
 
         res.redirect('/');
     } catch (err) {
-        const errorMessage = getErrorMessage(err);
-
-        res.status(400).render('movies/create', { error: errorMessage, movie: movieData });
+        res.status(400).render('movies/create', {
+            error: getErrorMessage(err),
+            movie: movieData,
+            categories: getMovieCategoryViewData(movieData.category),
+        });
     }
 });
 
