@@ -162,7 +162,7 @@ SoftUni JS Back-End Course Workshop
 
 ### Validation
 - [x] Validate movie
-- [ ] Validate cast
+- [x] Validate cast
 - [ ] Validate user
   
 
