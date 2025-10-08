@@ -160,10 +160,16 @@ SoftUni JS Back-End Course Workshop
 
 ## Workshop 4 - Validation and Error Handling
 
+- [x] Add resources
+
 ### Validation
 - [x] Validate movie
 - [x] Validate cast
-- [ ] Validate user
+- [x] Validate user
+- [x] BONUS: Validate passwords in model
+
+### Error Handling
+- [ ] Add static error notification container
   
 
 ### Bonuses
