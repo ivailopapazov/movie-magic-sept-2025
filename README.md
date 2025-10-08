@@ -157,3 +157,10 @@ SoftUni JS Back-End Course Workshop
  - [ ] Invalidate token on logout
  - [ ] Refresh token
  - [ ] Async jwt
+
+## Workshop 4 - Validation and Error Handling
+
+### Validation
+- [x] Validate movie
+- [ ] Validate cast
+- [ ] Validate user
