@@ -175,6 +175,8 @@ SoftUni JS Back-End Course Workshop
 - [x] Retain form data on error
 - [x] Extract get error message
 - [x] User login error handling
+- [x] Create movie error handling
+- [ ] BONUS retain movie category after error 
 
 ### Bonuses
 - [ ] Dynamic year check
