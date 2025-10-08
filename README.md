@@ -172,7 +172,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Add static error notification container
 - [x] User register error handling
 - [x] Render error container conditionally
-- [ ] 
+- [ ] Retain form data on error
 
 ### Bonuses
 - [ ] Dynamic year check
