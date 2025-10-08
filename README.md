@@ -47,7 +47,7 @@ SoftUni JS Back-End Course Workshop
    - [x] By title 
  - [x] Remember search words
 ### Bonuses
- - [x] Dynamic page title
+ - [x] Dynamic page title simple solution
  - [x] Rating (temp solution)
  - [x] File Persistance
 
@@ -183,6 +183,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Fix movie category on edit
 
 ### Bonuses
+- [ ] Dynamic page title advanced solution
 - [x] Guard edit from non creator
 - [ ] Redirect with message
 - [ ] Dynamic year check
