@@ -169,3 +169,4 @@ SoftUni JS Back-End Course Workshop
 ### Bonuses
 - [ ] Dynamic year check
 - [ ] Character name
+- [ ] Add more password validations
