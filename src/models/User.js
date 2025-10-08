@@ -14,9 +14,25 @@ const userSchema = new Schema({
         required: [true, 'Password is required'],
         match: [/^[a-zA-Z0-9]+$/],
         minLength: [6, 'Password should be at least 6 characters'], 
+    },
+});
+
+// Validate passwords
+userSchema.virtual('rePassword')
+    .get(function() {
+        return this._rePassword;
+    })
+    .set(function(value) {
+        this._rePassword = value;
+    });
+
+userSchema.pre('validate', function() {
+    if (this.isNew && this.password !== this.rePassword) {
+        this.invalidate('rePassword', 'Password missmatch!');
     }
 });
 
+// Validate unique email on user creation
 // userSchema.pre('validate', async function() {
 //     if (this.isNew) {
 //         // const userExists = await model('User').exists({email: this.email});

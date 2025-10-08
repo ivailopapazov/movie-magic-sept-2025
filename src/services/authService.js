@@ -11,6 +11,11 @@ export default {
             throw new Error('User already exists!');
         }
 
+        // check if passwords are the same
+        // if (userData.password !== userData.rePassword) {
+        //     throw new Error('Password missmatch!');
+        // }
+
         const user = await User.create(userData);
 
         const token = generateAuthToken(user);
@@ -20,6 +25,8 @@ export default {
     async login(email, password) {
         // Validate user
         const user = await User.findOne({ email });
+        
+        console.log();
 
         if (!user) {
             throw new Error('Invalid user or password!');
