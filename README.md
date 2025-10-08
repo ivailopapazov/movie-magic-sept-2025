@@ -169,8 +169,8 @@ SoftUni JS Back-End Course Workshop
 - [x] BONUS: Validate passwords in model
 
 ### Error Handling
-- [ ] Add static error notification container
-  
+- [x] Add static error notification container
+- [ ] User register error handling
 
 ### Bonuses
 - [ ] Dynamic year check
