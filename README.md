@@ -183,7 +183,7 @@ SoftUni JS Back-End Course Workshop
 - [x] Fix movie category on edit
 
 ### Bonuses
-- [ ] Guard edit from non creator
+- [x] Guard edit from non creator
 - [ ] Redirect with message
 - [ ] Dynamic year check
 - [ ] Character name

@@ -4,6 +4,7 @@ import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
 import { getErrorMessage } from "../utils/errorUtils.js";
 import { Types } from "mongoose";
+import { isMovieCreator } from "../middlewares/movieMiddleware.js";
 
 const movieController = Router();
 
@@ -96,7 +97,7 @@ movieController.get('/:movieId/delete', isAuth, async (req, res) => {
     res.redirect('/');
 });
 
-movieController.get('/:movieId/edit', async (req, res) => {
+movieController.get('/:movieId/edit', isAuth, isMovieCreator, async (req, res) => {
     const movieId = req.params.movieId;
 
     try {
@@ -106,11 +107,11 @@ movieController.get('/:movieId/edit', async (req, res) => {
 
         res.render('movies/edit', { movie, categories: categoriesViewData });
     } catch (err) {
-        res.render('404', {error: 'Movie not found'})
+        res.render('404', { error: 'Movie not found' })
     }
 });
 
-movieController.post('/:movieId/edit', async (req, res) => {
+movieController.post('/:movieId/edit', isAuth, isMovieCreator, async (req, res) => {
     const movieId = req.params.movieId;
     const movieData = req.body;
 
